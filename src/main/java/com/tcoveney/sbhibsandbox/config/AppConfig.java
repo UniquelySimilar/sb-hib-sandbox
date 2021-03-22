@@ -1,4 +1,4 @@
-package com.tcoveney.sbhibsandbox;
+package com.tcoveney.sbhibsandbox.config;
 
 //import org.slf4j.Logger;
 //import org.slf4j.LoggerFactory;

@@ -1,4 +1,4 @@
-package com.tcoveney.sbhibsandbox;
+package com.tcoveney.sbhibsandbox.runners;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
 import com.tcoveney.sbhibsandbox.models.Customer;
 import com.tcoveney.sbhibsandbox.repositories.CustomerRepository;
 
-@Component
+//@Component
 public class DataProcessor implements CommandLineRunner {
 	private static final Logger log = LoggerFactory.getLogger(DataProcessor.class);
 	
