@@ -21,7 +21,7 @@ import com.tcoveney.sbhibsandbox.models.Customer;
 import com.tcoveney.sbhibsandbox.repositories.CustomerRepository;
 
 @RestController
-@RequestMapping("/customer")
+@RequestMapping("/customers")
 public class CustomerController {
 	private static final Logger log = LoggerFactory.getLogger(CustomerController.class);
 	
