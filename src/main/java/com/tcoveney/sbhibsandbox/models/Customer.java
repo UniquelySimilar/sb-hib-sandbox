@@ -11,40 +11,39 @@ import javax.persistence.Table;
 @Table(name = "customer")
 public class Customer {
 
-  @Id
-  @GeneratedValue(strategy=GenerationType.IDENTITY)
-  @Column(name = "id", updatable = false, nullable = false)
-  private Long id;
-  
-  @Column(name = "first_name", nullable = false)
-  private String firstName;
-  
-  @Column(name = "last_name", nullable = false)
-  private String lastName;
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "id", updatable = false, nullable = false)
+	private Long id;
 
-  protected Customer() {}
+	@Column(name = "first_name", nullable = false)
+	private String firstName;
 
-  public Customer(String firstName, String lastName) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-  }
+	@Column(name = "last_name", nullable = false)
+	private String lastName;
 
-  @Override
-  public String toString() {
-    return String.format(
-        "Customer[id=%d, firstName='%s', lastName='%s']",
-        id, firstName, lastName);
-  }
+	protected Customer() {
+	}
 
-  public Long getId() {
-    return id;
-  }
+	public Customer(String firstName, String lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
 
-  public String getFirstName() {
-    return firstName;
-  }
+	@Override
+	public String toString() {
+		return String.format("Customer[id=%d, firstName='%s', lastName='%s']", id, firstName, lastName);
+	}
 
-  public String getLastName() {
-    return lastName;
-  }
+	public Long getId() {
+		return id;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
 }
